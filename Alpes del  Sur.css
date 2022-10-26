@@ -161,16 +161,6 @@ body{
 }
 
 
-.bloqueA input{
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    
-}
-
-.bloqueA input[type=checkbox]{
-    display: none;
-}
 
 .lista_fotos{
     width: 95%;
@@ -261,6 +251,7 @@ body{
     height: 650px;
     margin-top: 102px;
     flex-direction: column;
+    
 }
 
 .masinfo{
@@ -295,23 +286,20 @@ body{
 .epigrafe_video{
     width: fit-content;
     margin:auto;
-    
     text-align: center;
     color:#fff;
     background-color: transparent;
     font-family: Americana BT, 'Times New Roman';
     font-size: 35px;
 }
+
 .epigrafe_video:hover{
-    
     color: #29f;
     cursor: pointer;
-    
 }
 
 .video1 {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: transparent;
     margin-top: 22px;
@@ -338,9 +326,10 @@ body{
 }
 
 .contacto_final{
+    display: flex;
     width: 100%;
-    display:flex;
-    justify-content: space-evenly;
+    height: max-content;    
+    justify-content: space-around;
     margin-top: 50px;
 }
 
@@ -455,6 +444,8 @@ body{
 
 @media screen and (max-width: 720px){
 
+    
+   
     .principal {
         width: 100%;
         height: 250px;
@@ -470,10 +461,10 @@ body{
         width: 95%;
         height: 150px;
         position: relative;
-        top: 166px;
+        top: 186px;
         padding-top: 12px;
         font-family: 'Roboto Slab', serif;
-        font-size: 65px;
+        font-size: 45px;
         font-weight: 420;
         margin-bottom: 85px;
         margin-left: 10px;
@@ -489,7 +480,7 @@ body{
         background-color: transparent;
         text-align: center;
         font-family: Agate-Normal-It Regular, Times;
-        font-size: 35px;
+        font-size: 28px;
         top: 0px;
         box-sizing: content-box;
         font-weight: 800;
@@ -504,7 +495,7 @@ body{
     @keyframes desplaza2{
         0% {
             border-color: #f56; 
-            left: -700px;
+            left: -900px;
         }
         100%{
             left:900px;
@@ -532,6 +523,7 @@ body{
         margin: auto;
     }
 
+
     .epigrafe_video{
         position: relative;
         top: 100px;
@@ -539,24 +531,55 @@ body{
 
     .video1 {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         background-color: transparent;
         margin-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         text-align: center;
+        justify-items: center;
         border: transparent;
     }
     
     .video {
-        width: 720px;
+        width: 100%;
         height: 250px;
         border: none;
+        margin: none;
+        border-radius: 12px;
+    }
+
+    #atras{
+        margin-bottom: -22px;
+    }
+
+    #adelante{
+        margin-top: 10px;
+    }
+
+    .contacto_final{
+        flex-direction: column;
+        overflow: hidden;
+        
+        align-items: center;
     }
 
     .titulo_segundo{
-        font-size: 65px;
+        width: 220px;
+        text-align: center;
+        align-self: center;
+        font-size: 55px;
         user-select: none;
-        margin-left: 8px;
+        margin-bottom: 52px;
+        overflow: hidden;
+        
+    }
+
+    .form{
+        align-items: center;
+    }
+
+    .form textarea{
+        min-width: 200px;
     }
 
     .img_final img{
