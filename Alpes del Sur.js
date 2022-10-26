@@ -39,7 +39,7 @@ function modificar(){
 
 const video = document.getElementById("loco");
 const frase = document.querySelector(".epigrafe_video");
-let frases = ["Boyeros al paso", "Caca podrida", "Alveso mentiroso"];
+let frases = ["juego", "aventura", "arroyos"];
 let numFrases = 0;
 frase.textContent = frases[numFrases];
 let numero = 1;
@@ -75,4 +75,5 @@ function atras (){
     }
     
 }
+
 

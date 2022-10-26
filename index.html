@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="Normalized.css">
-    <link rel="stylesheet" href="Alpes del  Sur.css">
     
+    <link rel="stylesheet" href="Alpes del  Sur.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset=”utf-8”>
 
@@ -17,12 +17,11 @@
     </div>
 </head>
 <body>
-    <div class="bloqueA" >
-        
-            <marquee class="marquesina"  id="marq" width="111%" scrollamount="9">Nacieron los primeros Boyeritos de la temporada 2022/2023</marquee>
-            <!--<p class="primer__desplegable"> <input type="checkbox"> ¡¡¡¡ Nacieron los primeros Boyeritos de la temporada 2022/2023 !!!!</p>
-            <p class="segundo__desplegable"> <input type="checkbox"> ¡¡¡¡ Nacieron los primeros Boyeritos de la temporada 2022/2023 !!!!</p> -->
-    </div>
+    <main class="bloqueA">
+            <!--<marquee class="marquesina" onclick="modificar()" id="marq" direction="left" scrollamount="9">Nacieron los primeros Boyeritos de la temporada 2022/2023</marquee>-->
+            <p class="primer__desplegable"> <input type="checkbox"> ¡¡¡¡ Nacieron los primeros Boyeritos de la temporada 2022/2023 !!!!</p>
+         
+    </main>
         <div class="lista_fotos">
             <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/KPBIBCVABBH5NEWRTUL7P44CJY.jpg" alt="No dispobible">
             <img src="https://www.mundoperros.es/wp-content/uploads/2017/03/cachorro-boyero-de-berna.jpg" alt="No dispobible">
@@ -47,37 +46,40 @@
             </p> 
         </div>
             <br>
-        <div class="masinfo">
-                <p> más info </p>
-        </div>
+
+    <div class="parte_video">
+            <div class="masinfo">
+                <p class="masinfo"> últimas actividades! </p>
+            </div>
         
-        <p class="epigrafe_video"> Boyeros al paso</p>
-        <div class="video1">
+            <p class="epigrafe_video"> Boyeros al paso</p>
+            <div class="video1">
                 <button id="atras" class="boton_vid" onclick="atras()"><<</button>
-                <video class="video" id="loco" controls>
+                    <video class="video" id="loco" controls>
                     <source src="Boyero1.mp4"  type="video/mp4"/>
                     No se encontró el video
-                </video>
+                    </video>
                 <button id="adelante" class="boton_vid" onclick="adelantar()">>></button>
-        </div> 
+            </div> 
+    </div>
+
+    <div class="contacto_final">
+            <p class="titulo_segundo"> Alpes del Sur </p>
         
+            <form class="form">
+                <input class="input" type="email" placeholder="Su e-mail">
+                <input class="input" type="text" placeholder="Escriba el asunto">
+                <textarea class="input" placeholder="Escriba su mensaje"></textarea>
+                <input class="input" type="submit">
+            </form>
+    </div>
         
-        <p class="titulo_segundo"> Alpes del Sur </p>
-    
     
 </body>
-<div class="contacto_texto">
-<p> Contacto </p>
-</div>
+
+
 <footer>
-     <div class="formulario">
-        <form class="form">
-            <input class="input" type="email" placeholder="Su e-mail">
-            <input class="input" type="text" placeholder="Escriba el asunto">
-            <textarea class="input" placeholder="Escriba su mensaje"></textarea>
-            <input class="input" type="submit">
-        </form>
-    </div>
+     
     <div class="img_final">
         <img src="https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/2a008-logo-instagram-icono.png?fit=512%2C512&ssl=1" type="img/png" alt="not">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-

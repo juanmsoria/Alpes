@@ -1,30 +1,37 @@
-* {
-    background-color: rgba(87, 22, 11, 0.822);
+
+:root{
+    --color-vio:rgba(38,9,61,0.822);
+    --color-due:#FE3972;
 }
 
+body{
+    background-color:  var(--color-vio);
+    margin: auto;
+}
+
+
 .principal {
-    height: 95px;
+    height: 43px;
     width: 100%;
-    margin-top: 20px;
-    padding-bottom: 50px;
     background-image: url(https://www.meteorologiaenred.com/wp-content/uploads/2020/07/cordillera-europea.jpeg);
+    background-size: 100%;
     background-position: center;
-    background-size: cover;
-    background-position-y: 33em;
+    background-position-y: 29em;
+    margin-bottom: 60px;
     
 }
 
 .titulo{
     background-color: transparent;
     margin: auto;
-    color: #29f;
-    padding-top: 12px;
-    font-family: Agate-Normal-It Regular, 'Times New Roman';
-    font-size: 102px;
+    color: var(--color-due);
+    padding-top: 3px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 37px;
     font-weight: 420;
-    margin-bottom: 85px;
-    text-align: center;
-    text-shadow: 1mm 2mm rgba(34, 152, 255, 0.575);
+    margin-bottom: 0;
+    text-align: left;
+    
     user-select: none;
 }
 
@@ -34,6 +41,7 @@
     text-align: center;
     font-family: Agate-Normal-It Regular, Times;
     font-size: 25px;
+    text-align: left;
     margin-top: -65px;
     box-sizing: content-box;
     font-weight: 800;
@@ -62,21 +70,22 @@
     height: ;
 }*/
 
-.bloqueA{
-    overflow: hidden;
-}
 
-.marquesina{
+
+/**.marquesina{
     font-family: Gill Sans;
+    background-color: blue;
+    margin: -20px;
+    position: relative;
     color: #fff;
     font-size: 28px;
-    border-top: 2px solid;
-    border-bottom: 2px double;
-    margin-bottom: 15px;
     animation: colorinche 1s infinite alternate-reverse;
+    /*animation: marquesina 12s infinite;
     animation-timing-function: linear;
     animation-play-state: running;
-    user-select: none;
+    border-top: 2px solid;
+    border-bottom: 2px double;
+    
 }
 
 @keyframes colorinche{
@@ -84,79 +93,72 @@
     100%{border-color:rgb(255, 255, 255)}
 }
 
+@keyframes marquesina{
+    0%{transform: translateX(150%);}
+    100%{transform: translateX(-150%);}
+}
 
-/*
+.marquesina:hover{
+    animation-play-state: paused;
+    transition: 2s;
+} **/
+
+.bloqueA{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
+    margin-top: -6px;
+    border-top: 3px solid var(--color-due);
+    border-bottom: 3px solid var(--color-due);
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    user-select: none;
+    animation: colorinche 3s infinite;
+    animation-direction: alternate-reverse;
+    overflow: hidden;
+    
+}
+
+@keyframes colorinche{
+    0%{border-color:var(--color-due)}
+    100%{border-color:rgb(216, 104, 104)}
+}
+
 .primer__desplegable{
+    width: fit-content;
     font-family: Gill Sans;
     color: #fff;
+    background-color: transparent;
+    bottom: 36px;
     font-size: 28px;
-    border: 4px solid rgb(184, 233, 39);
-    border-radius: 3px;
-    width: fit-content;
     text-align: center;
-    margin-left: 35px;
     position: relative;
-    animation: desplaza 15s infinite;
+    animation: desplaza 15s infinite alternate-reverse;
     animation-direction: normal;
     animation-timing-function: linear;
     padding: 2px;
     user-select: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.primer__desplegable:hover{
+    animation-play-state: paused;
     
 }
+
 
 @keyframes desplaza{
     0% {
         border-color: #f56; 
-        left: 0px;
-    }
-    50% {
-        border-color: rgb(88, 50, 150); 
-        left: 1400px;
-    }
-    75%{
-        border-color: rgb(126, 80, 101); 
         left: -900px;
-    }
-    100%{
-        left:0px;
-    }
-}
-
-.segundo__desplegable{
-    font-family: Gill Sans;
-    color: #fff;
-    font-size: 28px;
-    border: 4px solid rgb(184, 233, 39);
-    border-radius: 3px;
-    width: fit-content;
-    text-align: center;
-    margin-left: 35px;
-    top: -50px;
-    box-sizing: border-box;
-    position: relative;
-    animation: desplazai 15s infinite;
-    animation-timing-function: linear;
-    padding: 2px;
-    user-select: none;
-}
-
-@keyframes desplazai{
-    0% {
-        border-color: #f56; 
-        left: 1400px;
-    }
-    25% {
-        border-color: rgb(88, 50, 150); 
-        left: -900px;
-    }
-    50%{
-        border-color: rgb(126, 80, 101); 
-        left: 0px;
     }
     100%{
         left:1400px;
     }
-}**/
+}
 
 
 .bloqueA input{
@@ -254,20 +256,32 @@
     font-weight: 800;
 }
 
+.parte_video{
+    display: flex;
+    height: 650px;
+    margin-top: 102px;
+    flex-direction: column;
+}
+
 .masinfo{
     background-color: transparent;
     margin: auto;
-    width: 115px;
+    width: fit-content;
     height: 25px;
+    position:relative;
+    margin-left: 0px;
+    margin-bottom: 60px;
 }
 
 .masinfo p{
     background-color: transparent;
     position: relative;
     font-family: Americana BT, 'Times New Roman';
-    font-size: 24px;
+    font-size: 44px;
     color: #fff;
+    font-style: oblique;
     margin: auto;
+    left: 5px;
 }
 
 .masinfo:hover{
@@ -279,12 +293,20 @@
 }
 
 .epigrafe_video{
-    margin-bottom: -85px;
-    margin-top: 65px;
+    width: fit-content;
+    margin:auto;
+    
     text-align: center;
+    color:#fff;
     background-color: transparent;
-    font-family: 'Gill San';
-    font-size: 25px;
+    font-family: Americana BT, 'Times New Roman';
+    font-size: 35px;
+}
+.epigrafe_video:hover{
+    
+    color: #29f;
+    cursor: pointer;
+    
 }
 
 .video1 {
@@ -292,7 +314,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: transparent;
-    margin-top: 100px;
+    margin-top: 22px;
     margin-bottom: 100px;
     text-align: center;
 }
@@ -315,12 +337,21 @@
     background-color: rgba(15, 160, 27, 0.747);
 }
 
+.contacto_final{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 250px;
+}
+
+
 .titulo_segundo{
-    color: #29f;
-    font-family: Agate-Normal-It Regular, 'Times New Roman';
+    width: 400px;
+    margin-top: 0px;
+    color: var(--color-due);
+    font-family: 'Roboto Slab', serif;
     font-size: 102px;
     font-weight: 420;
-    text-align: center;
     text-shadow: 1mm 2mm rgba(34, 152, 255, 0.575);
     user-select: none;
 }
@@ -336,12 +367,13 @@
 }
 
 .formulario{
+    float: right;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: none;
     margin-top: 25px;
-    
+    align-content: left;
 }
 
 .form{
