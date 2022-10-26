@@ -341,7 +341,7 @@ body{
     width: 100%;
     display:flex;
     justify-content: space-evenly;
-    margin-top: 250px;
+    margin-top: 50px;
 }
 
 
@@ -356,15 +356,7 @@ body{
     user-select: none;
 }
 
-.contacto_texto{ 
-    background-color: transparent;
-    margin: auto;
-    color: #29f;
-    font-family: Agate-Normal-It Regular, 'Times New Roman';
-    font-size: 25px;
-    font-weight: 420;
-    text-align: center;
-}
+
 
 .formulario{
     float: right;
@@ -418,17 +410,6 @@ body{
     cursor: pointer;
 }
 
-.img_final {
-    display: flex;
-    width: 320px;
-    float: right;
-    margin-top: 38px;
-    margin-bottom: 24px;
-    justify-content: space-around;
-    background-color: transparent;
-
-}
-
 .img_final img{
     width: 78px;
     height: 60px;
@@ -438,29 +419,37 @@ body{
 
 .whats{
     display: flex;
-    width: 320px;
-    margin-top: 52px;
-    margin-bottom: 24px;
-    margin-left: 32px;
-    justify-content: space-evenly;
+    width: 280px;
+    height: min-content;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
     position: relative;
     bottom: 19px;
-    background-color: transparent;
-    
+    left: 30px;
+    top: 20px;
+}
+
+.whats1{
+    display: flex;
+    align-items: center;
+    align-self: baseline;
+    margin: -10px;
+    padding: -10px;
 }
 
 .whats img{
-    border-radius: 75px;
-    width: 100px;
-    height: 60px;
-    object-fit: contain;
-    
+    border-radius: 55px;
+    width: 70px;
+    height: 35px;
+    object-fit: contain; 
 }
 
 .whats p{
-    font-weight: 555;
-    font-size: 22px;
-    margin-left: -38px;
+    font-weight: 355;
+    font-size: 18px;
+    margin-left: 0px;
+    justify-self: baseline;
 }
 
 
@@ -468,7 +457,7 @@ body{
 
     .principal {
         width: 100%;
-        height: 350px;
+        height: 250px;
         padding-top: 10px;
         background-image: url(https://www.meteorologiaenred.com/wp-content/uploads/2020/07/cordillera-europea.jpeg);
         background-position: none;
@@ -477,15 +466,19 @@ body{
     }
 
     .titulo{
-        background-color: rgba(168, 189, 235, 0.329);
-        width: 80%;
-        border-radius: 1ch;
-        color: rgb(12, 91, 160);
+        color: var(--color-due);
+        width: 95%;
+        height: 150px;
+        position: relative;
+        top: 166px;
         padding-top: 12px;
-        font-family: Agate-Normal-It Regular, 'Times New Roman';
-        font-size: 75px;
+        font-family: 'Roboto Slab', serif;
+        font-size: 65px;
         font-weight: 420;
         margin-bottom: 85px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 1ch;
         text-align: center;
         text-shadow: 1mm 2mm rgba(34, 152, 255, 0.575);
         user-select: none;
@@ -497,18 +490,35 @@ body{
         text-align: center;
         font-family: Agate-Normal-It Regular, Times;
         font-size: 35px;
-        top: -20px;
+        top: 0px;
         box-sizing: content-box;
         font-weight: 800;
         user-select: none;
     }
 
+    .primer__desplegable{
+        animation: desplaza2 15s infinite linear;
+        width:max-content;
+    }
+
+    @keyframes desplaza2{
+        0% {
+            border-color: #f56; 
+            left: -700px;
+        }
+        100%{
+            left:900px;
+        }
+    }
+    
+
     .lista_fotos{
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         background-color: transparent;
         justify-content: center;
         grid-auto-flow: dense;
-            
+          
     }
 
     .lista_fotos img{
@@ -518,6 +528,15 @@ body{
         border: 1px solid rgb(0, 0, 0);
     }
 
+    .masinfo{
+        margin: auto;
+    }
+
+    .epigrafe_video{
+        position: relative;
+        top: 100px;
+    }
+
     .video1 {
         display: flex;
         flex-wrap: wrap;
@@ -525,27 +544,21 @@ body{
         margin-top: 100px;
         margin-bottom: 100px;
         text-align: center;
+        border: transparent;
     }
     
     .video {
         width: 720px;
         height: 250px;
-        border: 3px solid rgb(78, 35, 15);
+        border: none;
     }
 
     .titulo_segundo{
         font-size: 65px;
         user-select: none;
+        margin-left: 8px;
     }
 
-    .img_final {
-        display: inline-block;
-        width: 220;
-        margin: auto;
-        background-color: transparent;
-    
-    }
-    
     .img_final img{
         width: 78px;
         height: 60px;
@@ -555,28 +568,36 @@ body{
     
     .whats{
         display: flex;
-        width: 320px;
-        margin: auto;
-        justify-content: space-evenly;
+        width: 280px;
+        height: min-content;
+        flex-direction: column;
+        justify-content: center; 
+        align-content: center;
         position: relative;
-        top:30px;
-        bottom: 9px;
-        right: 12px;
-        background-color: transparent;
-        
+        bottom: 19px;
+        left: 30px;
+        top: 20px;
+    }
+    
+    .whats1{
+        display: flex;
+        align-items: center;
+        align-self: baseline;
+        margin: -10px;
+        padding: -10px;
     }
     
     .whats img{
-        border-radius: 75px;
-        width: 100px;
-        height: 60px;
-        object-fit: contain;
-        
+        border-radius: 55px;
+        width: 70px;
+        height: 35px;
+        object-fit: contain; 
     }
     
     .whats p{
-        font-weight: 555;
-        font-size: 22px;
-        margin-left: -38px;
+        font-weight: 355;
+        font-size: 18px;
+        margin-left: 0px;
+        justify-self: baseline;
     }
 }
