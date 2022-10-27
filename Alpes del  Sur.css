@@ -1,3 +1,8 @@
+*{
+    margin: none;
+    padding: 0px;
+}
+
 
 :root{
     --color-vio:rgba(38,9,61,0.822);
@@ -549,7 +554,7 @@ body{
     }
 
     #atras{
-        margin-bottom: -22px;
+        margin-bottom: -4px;
     }
 
     #adelante{
